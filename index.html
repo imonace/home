@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Monace Home</title>
+    <title>Mona Home</title>
     <meta name="keywords" content=""/>
     <meta name="description" content="" />
     <meta name="renderer" content="webkit">
@@ -25,7 +25,7 @@
         </div>
         <div class="loading-text text-center">
             <p class="loading-pre">Loading...</p>
-            <p class="avatar-name">Monace</p>
+            <p class="avatar-name">Mona</p>
             <p class="dokidoki-text"></p>
         </div>
     </div>
@@ -35,66 +35,50 @@
         <div class="content-container">
             <div class="self-wrapper">
                 <div class="self-content links-container flex-center text-center">
-                    <a href="#" class="link-item">
+                    <a href="https://blog.mona.moe" class="link-item">
                         <div class="link-icon"><i class="fa fa-home"></i></div>
-                        <div>博客</div>
+                        <div>Blog</div>
                     </a>
-                    <a href="#" class="link-item">
-                        <div class="link-icon"><i class="fa fa-play-circle"></i></div>
-                        <div>Bilibili</div>
+                    <a href="https://blog.mona.moe/about" class="link-item">
+                        <div class="link-icon"><i class="fa fa-user"></i></div>
+                        <div>About</div>
                     </a>
-                    <a href="#" class="link-item">
-                        <div class="link-icon"><i class="fa fa-qq"></i></div>
-                        <div>QQ</div>
+                    <a href="mailto:mail@mona.moe" class="link-item">
+                        <div class="link-icon"><i class="fa fa-envelope"></i></div>
+                        <div>Mail</div>
                     </a>
-                    <a href="#" class="link-item">
+                    <a href="https://t.me/imonace" class="link-item">
                         <div class="link-icon"><i class="fa fa-telegram"></i></div>
                         <div>Telegram</div>
                     </a>
-                    <a href="#" class="link-item">
+                    <a href="https://steamcommunity.com/id/ninebytes" class="link-item">
                         <div class="link-icon"><i class="fa fa-steam"></i></div>
                         <div>Steam</div>
                     </a>
-                    <a href="#" class="link-item">
+                    <a href="https://github.com/imonace" class="link-item">
                         <div class="link-icon"><i class="fa fa-github"></i></div>
                         <div>Github</div>
                     </a>
-                </div><div class="self-content article-container">
-                    <div class="article-content"></div>
-                    <div class="article-loading flex-center">
-                        <svg style="visibility: hidden" class="loading-indicator" width="128" height="128">
-                            <g class="circle-rotating">
-                                <g class="circle-step">
-                                    <circle cx="64" cy="64" r="56" class="circle-line"></circle>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="text-center">Loading...</span>
-                    </div>
                 </div><div class="self-content">
-                    <div class="info-container">
-                        This is a simple homepage theme by Zapic.
+                    <div class="info-container flex-center text-center">
+                        真的不会前端，只能整成这样了🤣（
                     </div>
 
             </div>
             </div>
-            <div class="self-switcher">
+            <div class="self-switcher flex-center">
                 <div class="switcher-btn text-center" id="switcher-btn-1">
                     <div class="btn-icon"><i class="fa fa-link"></i></div>
-                    <div class="btn-text">链接</div>
+                    <div class="btn-text">Link</div>
                 </div>
                 <div class="switcher-btn text-center" id="switcher-btn-2">
-                    <div class="btn-icon"><i class="fa fa-book"></i></div>
-                    <div class="btn-text">文章</div>
-                </div>
-                <div class="switcher-btn text-center" id="switcher-btn-3">
                     <div class="btn-icon"><i class="fa fa-info-circle"></i></div>
-                    <div class="btn-text">关于</div>
+                    <div class="btn-text">Info</div>
                 </div>
                 <div class="btn-select-indicator"></div>
             </div>
         </div>
-        <div class="footer-container text-center">© 2020 By <a href="#">Present</a></div>
+        <div class="footer-container text-center">© 2021 By <a href="#">Mona</a></div>
     </div>
     </body>
 
@@ -114,11 +98,11 @@
         }];
         var senArr = [
             {
-                ch: ["This is an example."],
-                py: ["This is an example."],
+                ch: ["import torch as tf"],
+                py: ["import torch as tf"],
             }, {
-                ch: ["这是","一个","示例","."],
-                py: ["zhe'shi","yi'ge","shi'li","."],
+                ch: ["`timescale 1ns/100ps"],
+                py: ["`timescale 1ns/100ps"],
             }
         ];
 
@@ -130,25 +114,19 @@
         transform: translateX(0%);
     }
     .content-container[data-selection="1"] .btn-select-indicator {
-        transform: translateX(0%);
+        transform: translateX(-50%);
     }
     .content-container[data-selection="2"] .self-wrapper {
         transform: translateX(-33.33%);
     }
     .content-container[data-selection="2"] .btn-select-indicator {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
-    .content-container[data-selection="3"] .self-wrapper {
-        transform: translateX(-66.66%);
-    }
-    .content-container[data-selection="3"] .btn-select-indicator {
-        transform: translateX(200%);
-    }
-    .content-container[data-selection="1"] #switcher-btn-1 .btn-icon .fa,.content-container[data-selection="2"] #switcher-btn-2 .btn-icon .fa,.content-container[data-selection="3"] #switcher-btn-3 .btn-icon .fa{
+    .content-container[data-selection="1"] #switcher-btn-1 .btn-icon .fa, .content-container[data-selection="2"] #switcher-btn-2 .btn-icon .fa{
         font-size: 2.5rem;
         transform: translateY(.1em);
     }
-    .content-container[data-selection="1"] #switcher-btn-1 .btn-text, .content-container[data-selection="2"] #switcher-btn-2 .btn-text, .content-container[data-selection="3"] #switcher-btn-3 .btn-text {
+    .content-container[data-selection="1"] #switcher-btn-1 .btn-text, .content-container[data-selection="2"] #switcher-btn-2 .btn-text{
         opacity: 0;
     }
 </style>
