@@ -90,8 +90,6 @@
 <script src="static/js/main.js"></script>
 <script>
     (function () {
-        var feedType = "json";
-        var feedPath = "feed.php";
         var bgArr = [{
             "url": "static/img/88511285_p0.jpg",
             "thumb": ""
@@ -105,8 +103,7 @@
                 py: ["`timescale 1ns/100ps"],
             }
         ];
-
-        Init(feedType, feedPath, bgArr, senArr);
+        Init(bgArr, senArr);
     })();
 </script>
 <style>
